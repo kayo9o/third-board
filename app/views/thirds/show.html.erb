@@ -1,0 +1,7 @@
+<h1>id: <%= @third.id %>のメッセージ詳細ページ</h1>
+<p><%= @third.content %></p>
+
+<%= link_to '一覧に戻る', thirds_path %>
+<%= link_to 'このメッセージを編集する',edit_third_path(@third) %>
+<%= Link_to 'このメッセージを削除する',@third,method: :delete, data:{ confirm: '本当に削除してよろしいですか？' } %>
+
